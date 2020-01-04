@@ -1,6 +1,7 @@
 import expressLoader from './express';
+import Logger from './logger';
 
 export default async ({ expressApp }) => {
   await expressLoader({ app: expressApp });
-  console.log('✌️ Express loaded');
+  Logger.info('✌️ Express loaded');
 }
