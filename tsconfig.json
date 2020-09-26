@@ -10,8 +10,8 @@
       "./src/types"
     ],
     "allowSyntheticDefaultImports": true,
-    "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
     "forceConsistentCasingInFileNames": true,
     "moduleResolution": "node",
     "module": "commonjs",

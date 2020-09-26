@@ -1,7 +1,7 @@
-import dotenv from 'dotenv';
+import dotenv from "dotenv";
 
 // Set the NODE_ENV to 'development' by default
-process.env.NODE_ENV = process.env.NODE_ENV || 'development';
+process.env.NODE_ENV = process.env.NODE_ENV || "development";
 
 const envFound = dotenv.config();
 if (!envFound) {
@@ -20,10 +20,12 @@ export default {
    * API configs
    */
   api: {
-    prefix: '/api',
+    prefix: "/api"
   },
 
   logs: {
     level: process.env.LOG_LEVEL
-  }
+  },
+
+  databaseURL: process.env.MONGODB_URI
 };

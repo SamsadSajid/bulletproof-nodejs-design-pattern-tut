@@ -1,6 +1,7 @@
-import express from 'express';
-import config from './config';
-import Logger from './loaders/logger';
+import "reflect-metadata";
+import express from "express";
+import config from "./config";
+import Logger from "./loaders/logger";
 
 const startServer = async () => {
   const app = express();
@@ -11,7 +12,7 @@ const startServer = async () => {
    * Well, at least in node 10 without babel and at the time of writing
    * So we are using good old require.
    **/
-  await require('./loaders').default({ expressApp: app });
+  await require("./loaders").default({ expressApp: app });
 
   app.listen(config.port, (err: any) => {
     if (err) {
@@ -25,6 +26,6 @@ const startServer = async () => {
       ################################################
     `);
   });
-}
+};
 
 startServer();
