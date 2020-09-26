@@ -4,7 +4,7 @@ import { Container } from "typedi";
 import { Logger } from "winston";
 
 const route = Router();
-
+// omit it
 export default (app: Router) => {
   app.use("/demo", route);
 
