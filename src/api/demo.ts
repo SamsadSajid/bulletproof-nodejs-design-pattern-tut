@@ -4,7 +4,7 @@ import { Container } from "typedi";
 import { Logger } from "winston";
 
 const route = Router();
-// omit it
+// omit it and test for mergify
 export default (app: Router) => {
   app.use("/demo", route);
 
