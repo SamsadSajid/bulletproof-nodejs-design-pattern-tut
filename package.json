@@ -24,7 +24,7 @@
     "lodash": "^4.17.13",
     "moment": "^2.23.0",
     "moment-timezone": "^0.5.23",
-    "mongoose": "^5.4.13",
+    "mongoose": "^8.8.3",
     "reflect-metadata": "^0.1.13",
     "ts-node": "^7.0.1",
     "tslint": "^5.11.0",
